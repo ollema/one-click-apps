@@ -13,7 +13,7 @@ services:
       RAILS_ASSUME_SSL: "false"
       GOOD_JOB_EXECUTION_MODE: async
       SECRET_KEY_BASE: $$cap_secret_key_base
-      DB_HOST: $$cap_appname-postgres
+      DB_HOST: srv-captain--$$cap_appname-postgres
       POSTGRES_DB: maybe_production
       POSTGRES_USER: maybe_user
       POSTGRES_PASSWORD: $$cap_postgres_pass
