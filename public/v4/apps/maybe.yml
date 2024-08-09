@@ -41,8 +41,8 @@ caproverOneClickApp:
         - id: '$$cap_maybe_version'
           label: Maybe version
           defaultValue: '0.1.0-alpha.13'
-          description: Check out their Docker page for the valid tags https://github.com/maybe-finance/maybe/pkgs/container/maybe
-          validRegex: '\d+(\.\d+){0,2}(-[a-zA-Z0-9]+(\.\d+)?)?'
+          description: Choose from https://github.com/maybe-finance/maybe/pkgs/container/maybe
+          validRegex: /^([^\s^\/])+$/
         - id: $$cap_secret_key_base
           label: Secret Key Base
           description: 'Secret key base'
@@ -51,7 +51,7 @@ caproverOneClickApp:
         - id: $$cap_postgres_version
           label: Postgres Version
           defaultValue: '16'
-          description: Checkout their page for the valid tags https://hub.docker.com/_/postgres
+          description: Choose from https://hub.docker.com/_/postgres
           validRegex: /^([^\s^\/])+$/
         - id: $$cap_postgres_pass
           label: Postgres Database Password
