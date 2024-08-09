@@ -4,8 +4,8 @@ services:
     image: ghcr.io/maybe-finance/maybe:latest
     volumes:
       - $$cap_appname-app-storage:/rails/storage
-    ports:
-      - 3000:3000
+    caproverExtra:
+      containerHttpPort: '3000'
     restart: unless-stopped
     environment:
       SELF_HOSTING_ENABLED: "true"
